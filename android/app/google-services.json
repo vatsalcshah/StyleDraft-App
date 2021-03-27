@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "603211268313",
+    "project_id": "styledraft-7506f",
+    "storage_bucket": "styledraft-7506f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603211268313:android:899ca1e36154f39ce57ec8",
+        "android_client_info": {
+          "package_name": "com.hackbash.styledraft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603211268313-ihv3kject165si5h46ca5do6hgdtrsb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4UUtQngvsIISWe8Z2Tey3bkf-agxWdPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603211268313-ihv3kject165si5h46ca5do6hgdtrsb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
