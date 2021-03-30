@@ -1,7 +1,7 @@
 # StyleDraft
 <img src = "https://user-images.githubusercontent.com/41834661/111059515-3ef69e80-84bc-11eb-8372-83ec66919459.png" width ="400" height ="400">
 
-StyleDraft serves as an online marketplace, facilitating auctions between sellers and buyers, then collecting transaction and payment fees.HyperLedger Fabric provides transparency using blockchain technology. Sellers send purchased items to StyleDraft facilities for inspection and verification, then authenticated products are shipped to buyers.StyleDraft features a "stock market-like" variable pricing framework and discloses price histories for specific items.
+StyleDraft serves as an online thrift store, facilitating auctions between sellers and buyers, then collecting transaction and payment fees.HyperLedger Fabric provides transparency using blockchain technology. Sellers send purchased items to StyleDraft facilities for inspection and verification, then authenticated products are shipped to buyers.StyleDraft features a "stock market-like" variable pricing framework and discloses price histories for specific items.
 
 Technologies Stack 
 1) Dart(Flutter)
