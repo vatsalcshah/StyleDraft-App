@@ -106,13 +106,13 @@ Double check install instructions for both
    <img src = "https://user-images.githubusercontent.com/53492853/112750424-29b65f80-8fe6-11eb-8d3a-6f3a9ffe3aed.PNG" width ="400" height ="700">   <img src = "https://user-images.githubusercontent.com/53492853/112750428-31760400-8fe6-11eb-93a9-e4ff6988b0ee.PNG" width ="400" height ="700">
   
   ## Product Screen
-  <img src = "https://user-images.githubusercontent.com/53492853/112750426-2e7b1380-8fe6-11eb-8715-0c5dd7da15be.PNG" width ="400" height ="700"> 
+  <img src = "https://user-images.githubusercontent.com/53492853/113052785-2b8a4980-91c5-11eb-8f2d-bfc647522602.PNG" width ="400" height ="700"> 
   
   ## Search
-   <img src = "https://user-images.githubusercontent.com/53492853/112977202-66639180-9173-11eb-8406-dff4d1bcebca.PNG" width ="400" height ="700">   <img src = "https://user-images.githubusercontent.com/53492853/112977211-682d5500-9173-11eb-9df5-858417f390cf.PNG" width ="400" height ="700">
+   <img src = "https://user-images.githubusercontent.com/53492853/112977202-66639180-9173-11eb-8406-dff4d1bcebca.PNG" width ="400" height ="700">   <img src = "https://user-images.githubusercontent.com/53492853/113052788-2cbb7680-91c5-11eb-984a-f62731b67d4a.PNG" width ="400" height ="700">
   
   ## Auction Pages
-  <img src = "https://user-images.githubusercontent.com/41834661/111059403-410c2d80-84bb-11eb-94ff-6940c3b288ec.PNG" width ="400" height ="700">   <img src = "https://user-images.githubusercontent.com/41834661/111059412-4c5f5900-84bb-11eb-9a7a-dccffe58a7a6.PNG" width ="400" height ="700">
+  <img src = "https://user-images.githubusercontent.com/41834661/111059403-410c2d80-84bb-11eb-94ff-6940c3b288ec.PNG" width ="400" height ="700">   <img src = "https://user-images.githubusercontent.com/53492853/113052780-2a591c80-91c5-11eb-8f8c-99b52306b9b6.PNG" width ="400" height ="700">
 
 
 # API Endpoints For Hyperledger
