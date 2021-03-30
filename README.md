@@ -16,13 +16,87 @@ Technologies Stack
 
 ![Alt Text](https://media.giphy.com/media/ANbD1CCdA3iI8/giphy.gif)
 
-There is an abundance of applications where buyers and sellers can exchange products but there is a lack of a trustable platform where the organization is involved in the transparency of transcations this causes scepticism for users. Trading applications are also not involved in the process of validating the authenticity of the product which further increases the mistrust.
+•Fashion—a $2.5 trillion sector—is the second most polluting industry on Earth, right behind oil. The pressure to reduce costs and speed up production time means that environmental corners are cut in the name of profit. Fast Fashion’s negative impact includes the use of cheap, toxic textile dyes – with the fashion industry the second largest polluter of clean water globally after agriculture.
+The speed at which garments are produced also means that more and more clothes are disposed of by consumers, creating a huge amount of textile waste. In Canada, the average person throws out 81 pounds of textiles annually, while North Americans send 9.5 million tons of clothing to the landfill every year — most of which could be reused.
+On April 24, 2013 the world got a reality check when the Rana Plaza clothing manufacturing complex in Bangladesh collapsed, killing over 1,000 workers and injuring over 2,500. There are approximately 40 million garment workers in the world today; many of whom do not have rights or protections. They are some of the lowest paid workers in the world and roughly 85% of all garment workers are women. The exploitation of women’s work is too big to ignore.
+
+• There is an abundance of applications where buyers and sellers can exchange products but there is a lack of a trustable platform where the organization is involved in the transparency of transcations this causes scepticism for users. Trading applications are also not involved in the process of validating the authenticity of the product which further increases the mistrust.
 
 # Our Hack
 
 ![Alt Text](https://media.giphy.com/media/5z0cCCGooBQUtejM4v/giphy.gif)
 
-Users will be able to track the journey of each product from the seller to our facility and finally till their doorstep using HyperLedger Fabric which is a private blockchain technology by IBM. Each product will be assessed at our facility and the exact condition of the product will be noted in the hyperledger, along with that fake products will be removed from the chain of supply.
+•With fast fashion seasons now changing every single week, new garments are being produced far too often. Ditch fast fashion like it’s last week’s trends and start shopping thrift! Shopping thrift is the best way to reduce your clothing footprint. It is a great way to find high quality, unique garments at a fraction of the price of buying new.
+
+• Users will be able to track the journey of each product from the seller to our facility and finally till their doorstep using HyperLedger Fabric which is a private blockchain technology by IBM. Each product will be assessed at our facility and the exact condition of the product will be noted in the hyperledger, along with that fake products will be removed from the chain of supply.
+
+## Getting started
+
+#### 1. [Setup Flutter](https://flutter.dev/docs/get-started/install)
+
+#### 2. Clone the repo
+
+```sh
+$ git clone https://github.com/mdanics/fluttergram.git
+$ cd fluttergram/
+```
+
+#### 3. Setup the firebase app
+
+1. You'll need to create a Firebase instance. Follow the instructions at https://console.firebase.google.com.
+2. Once your Firebase instance is created, you'll need to enable Google authentication.
+
+* Go to the Firebase Console for your new instance.
+* Click "Authentication" in the left-hand menu
+* Click the "sign-in method" tab
+* Click "Google" and enable it
+
+3. Create Cloud Functions (to make the Feed work)
+* Create a new firebase project with `firebase init`
+* Copy this project's `functions/lib/index.js` to your firebase project's `functions/index.js`
+* Push the function `getFeed` with `firebase deploy --only functions`  In the output, you'll see the getFeed URL, copy that.
+* Replace the url in the `_getFeed` function in `feed.dart` with your cloud function url from the previous step.
+
+_**If this does not work**  and you get the error `Error: Error parsing triggers: Cannot find module './notificationHandler'` Try following [these steps](https://github.com/mdanics/fluttergram/issues/25#issuecomment-434031430). If you are still unable to get it to work please open a new issue._
+
+_You may need to create the neccessary index by running `firebase functions:log` and then clicking the link_
+
+_**If you are getting no errors, but an empty feed** You must post photos or follow users with posts as the getFeed function only returns your own posts & posts from people you follow._
+
+4. Enable the Firebase Database
+* Go to the Firebase Console
+* Click "Database" in the left-hand menu
+* Click the Cloudstore "Create Database" button
+* Select "Start in test mode" and "Enable"
+
+5. (skip if not running on Android)
+
+* Create an app within your Firebase instance for Android, with package name com.yourcompany.news
+* Run the following command to get your SHA-1 key:
+
+```
+keytool -exportcert -list -v \
+-alias androiddebugkey -keystore ~/.android/debug.keystore
+```
+
+* In the Firebase console, in the settings of your Android app, add your SHA-1 key by clicking "Add Fingerprint".
+* Follow instructions to download google-services.json
+* place `google-services.json` into `/android/app/`.
+
+6. (skip if not running on iOS)
+
+* Create an app within your Firebase instance for iOS, with your app package name
+* Follow instructions to download GoogleService-Info.plist
+* Open XCode, right click the Runner folder, select the "Add Files to 'Runner'" menu, and select the GoogleService-Info.plist file to add it to /ios/Runner in XCode
+* Open /ios/Runner/Info.plist in a text editor. Locate the CFBundleURLSchemes key. The second item in the array value of this key is specific to the Firebase instance. Replace it with the value for REVERSED_CLIENT_ID from GoogleService-Info.plist
+
+Double check install instructions for both
+   - Google Auth Plugin
+     - https://pub.dartlang.org/packages/firebase_auth
+   - Firestore Plugin
+     -  https://pub.dartlang.org/packages/cloud_firestore
+
+
 
 # Screenshots :
   ## User Authentication
