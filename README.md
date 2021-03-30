@@ -37,8 +37,8 @@ On April 24, 2013 the world got a reality check when the Rana Plaza clothing man
 #### 2. Clone the repo
 
 ```sh
-$ git clone https://github.com/mdanics/fluttergram.git
-$ cd fluttergram/
+$ git clone https://github.com/vatsalcshah/StyleDraft-App
+$ cd StyleDraft-App/
 ```
 
 #### 3. Setup the firebase app
@@ -51,25 +51,13 @@ $ cd fluttergram/
 * Click the "sign-in method" tab
 * Click "Google" and enable it
 
-3. Create Cloud Functions (to make the Feed work)
-* Create a new firebase project with `firebase init`
-* Copy this project's `functions/lib/index.js` to your firebase project's `functions/index.js`
-* Push the function `getFeed` with `firebase deploy --only functions`  In the output, you'll see the getFeed URL, copy that.
-* Replace the url in the `_getFeed` function in `feed.dart` with your cloud function url from the previous step.
-
-_**If this does not work**  and you get the error `Error: Error parsing triggers: Cannot find module './notificationHandler'` Try following [these steps](https://github.com/mdanics/fluttergram/issues/25#issuecomment-434031430). If you are still unable to get it to work please open a new issue._
-
-_You may need to create the neccessary index by running `firebase functions:log` and then clicking the link_
-
-_**If you are getting no errors, but an empty feed** You must post photos or follow users with posts as the getFeed function only returns your own posts & posts from people you follow._
-
-4. Enable the Firebase Database
+3. Enable the Firebase Database
 * Go to the Firebase Console
 * Click "Database" in the left-hand menu
 * Click the Cloudstore "Create Database" button
 * Select "Start in test mode" and "Enable"
 
-5. (skip if not running on Android)
+4. (skip if not running on Android)
 
 * Create an app within your Firebase instance for Android, with package name com.yourcompany.news
 * Run the following command to get your SHA-1 key:
@@ -83,7 +71,7 @@ keytool -exportcert -list -v \
 * Follow instructions to download google-services.json
 * place `google-services.json` into `/android/app/`.
 
-6. (skip if not running on iOS)
+5. (skip if not running on iOS)
 
 * Create an app within your Firebase instance for iOS, with your app package name
 * Follow instructions to download GoogleService-Info.plist
